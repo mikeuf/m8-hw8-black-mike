@@ -20,11 +20,21 @@
 .sub-menu {
   padding-left: 0;
   background-color: #dde1e7;
+  height: 0;
+  display: none;
 }
 .sub-menu li {
-  display: none;
   width: 100%;
   padding: 20px;
   border: 2px solid #fff;
   box-sizing: border-box;
+}
+
+
+.menu-visible {
+  display: block;
+    transition: all 0.5s;
+    height: 100%;
+    max-height: 186px;
+
 }

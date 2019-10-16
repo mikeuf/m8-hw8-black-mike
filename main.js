@@ -1,17 +1,19 @@
 // It is always helpful to use comments in your code!
 
 
-var mainMenuLabels = document.querySelectorAll("main-menu-labels");
+var mainMenuLabels = document.querySelectorAll(".main-menu-labels");
 
 mainMenuLabels.forEach(function(element) {
 
 element.addEventListener("mouseover", function() {
-element.style.display = "none";
+var subMenu = element.nextElementSibling;
+subMenu.classList.add("menu-visible");
 });
 
 
 element.addEventListener("mouseout", function() {
-element.style.display = "block";
+var subMenu = element.nextElementSibling;
+subMenu.classList.remove("menu-visible");
 });
 
 
